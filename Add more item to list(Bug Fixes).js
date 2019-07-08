@@ -6,10 +6,7 @@
 //
 // P.S. You have to create a new list and add the new item to that. Adding a new item to the input list is not going to work. However it is not the whole story.
 
-function addExtra( listOfNumbers ){
-  for (var i = 0; i <= listOfNumbers.length; i++){
-
-  }
-  return finalList;
+function addExtra(listOfNumbers) {
+  return [...listOfNumbers, Math.random() * 100];
 }
 

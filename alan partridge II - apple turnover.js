@@ -16,3 +16,12 @@
 //
 // Other katas in this series:
 
+function hyperbole(text) {
+    const number = parseInt(text);
+    return Math.pow(number, 2) > 1000 ?
+        'It\'s hotter than the sun!!' :
+        'Help yourself to a honeycomb Yorkie for the glovebox.';
+}
+
+console.log(hyperbole(10))
+console.log(hyperbole(100))

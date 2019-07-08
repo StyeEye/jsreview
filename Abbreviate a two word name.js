@@ -8,3 +8,10 @@
 //
 // Patrick Feeney => P.F
 
+function initials(name) {
+    const parts = name.toUpperCase().split(' ');
+    return `${parts[0][0]}.${parts[1][0]}`;
+}
+
+console.log(initials("Sam Harris"));
+console.log(initials("Patrick Feeney"));

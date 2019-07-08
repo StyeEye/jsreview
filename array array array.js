@@ -8,4 +8,15 @@
 //
 // if (x) == ['a', 3] you should return [['a', 3], ['a', 3], ['a', 3]].
 
+function scoreThing(input) {
+    if (typeof (input[0]) === 'number' || typeof (input[1]) === 'number') {
+        const val1 = typeof (input[0]) === 'number' ? input[0] : 0;
+        const val2 = typeof (input[1]) === 'number' ? input[1] : 0;
 
+        return Array.from({ length: val1 + val2 }, () => input);
+    } else {
+        return 'Void!';
+    }
+}
+
+console.log(scoreThing(['a', 3]));

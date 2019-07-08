@@ -6,3 +6,10 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
+function addLength(text) {
+    const words = text.split(' ');
+    return words.map(e => `${e} ${e.length}`);
+}
+
+console.log(addLength('apple ban'))
+console.log(addLength('you will win'))

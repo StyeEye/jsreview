@@ -13,3 +13,10 @@
 
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
+function predictAge(...ages) {
+    const step1 = ages.reduce((value, e) => e * e + value, 0);
+    const step2 = Math.sqrt(step1) / 2;
+    return Math.floor(step2);
+}
+
+console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45));
